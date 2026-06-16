@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaDesk</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="boot" class="boot"><div><b>NovaDesk</b><span>Loading local desktop...</span></div></div>
+  <main id="desktop" class="desktop">
+    <div class="wallpaper"></div>
+    <section id="desktop-icons" class="desktop-icons"></section>
+    <section id="window-layer" class="window-layer"></section>
+  </main>
+  <aside id="start-menu" class="start-menu hidden">
+    <header><div><b>NovaDesk</b><small>Apps, games and local tools</small></div><button id="start-close">×</button></header>
+    <input id="start-search" type="search" placeholder="Search apps and games" autocomplete="off" />
+    <div id="start-apps" class="start-apps"></div>
+  </aside>
+  <nav class="taskbar">
+    <button id="start-button" class="start-button" title="Start">◆</button>
+    <input id="taskbar-search" class="taskbar-search" type="search" placeholder="Search apps, games or enter a URL" autocomplete="off" />
+    <div id="taskbar-apps" class="taskbar-apps"></div>
+    <button id="theme-toggle" class="tray-button" title="Toggle theme">◐</button>
+    <span id="clock" class="clock"></span>
+  </nav>
+  <div id="context-menu" class="context-menu hidden"></div>
+  <div id="snap-preview" class="snap-preview hidden"></div>
+  <script src="storage.js"></script>
+  <script src="state.js"></script>
+  <script src="contextMenu.js"></script>
+  <script src="appRegistry.js"></script>
+  <script src="app-fileExplorer.js"></script>
+  <script src="app-settings.js"></script>
+  <script src="app-browser.js"></script>
+  <script src="app-terminal.js"></script>
+  <script src="app-games.js"></script>
+  <script src="windowManager.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
