@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaDesk Local Web OS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-card">
+      <div class="brand-orb"></div>
+      <h1>NovaDesk</h1>
+      <p>Starting local workspace...</p>
+      <div class="boot-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div id="desktop" class="desktop" aria-label="NovaDesk desktop">
+    <div id="wallpaper-glow" class="wallpaper-glow"></div>
+    <div id="desktop-icons" class="desktop-icons"></div>
+    <div id="window-layer" class="window-layer"></div>
+  </div>
+
+  <aside id="start-menu" class="start-menu hidden" aria-label="Start menu">
+    <div class="start-header">
+      <div>
+        <strong>NovaDesk</strong>
+        <span>Local browser operating system</span>
+      </div>
+      <button id="start-close" class="icon-button" title="Close start menu">×</button>
+    </div>
+    <input id="start-search" class="start-search" type="search" placeholder="Search apps and files" />
+    <div id="start-apps" class="start-apps"></div>
+    <div class="start-footer">
+      <button id="quick-settings" class="footer-button">Settings</button>
+      <button id="quick-terminal" class="footer-button">Terminal</button>
+    </div>
+  </aside>
+
+  <nav id="taskbar" class="taskbar" aria-label="Taskbar">
+    <button id="start-button" class="taskbar-button start-button" title="Start">◆</button>
+    <div id="taskbar-apps" class="taskbar-apps"></div>
+    <div class="taskbar-tray">
+      <button id="theme-toggle" class="tray-button" title="Toggle theme">◐</button>
+      <span id="clock" class="clock"></span>
+    </div>
+  </nav>
+
+  <div id="context-menu" class="context-menu hidden"></div>
+  <div id="snap-preview" class="snap-preview hidden"></div>
+
+  <script src="storage.js"></script>
+  <script src="state.js"></script>
+  <script src="contextMenu.js"></script>
+  <script src="appRegistry.js"></script>
+  <script src="app-fileExplorer.js"></script>
+  <script src="app-settings.js"></script>
+  <script src="app-browser.js"></script>
+  <script src="app-terminal.js"></script>
+  <script src="windowManager.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
