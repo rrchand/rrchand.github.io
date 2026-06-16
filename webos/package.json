@@ -1,0 +1,1 @@
+{"name":"novadesk-ultimate","version":"2.0.0","description":"Offline web-based desktop OS with apps, games, productivity, realism and blockchain lab.","private":true,"scripts":{"start":"python -m http.server 8080","serve":"python -m http.server 8080"},"keywords":["web-os","desktop","offline","javascript"],"license":"MIT","devDependencies":{}}

@@ -1,0 +1,16 @@
+NovaDesk Ultimate
+
+Run options:
+1. Open index.html directly in your browser.
+2. Or run: python -m http.server 8080
+   Then open: http://localhost:8080
+3. For GitHub Pages, keep index.html in the repository root.
+
+First launch:
+• You will be prompted to create an AuthChain password.
+• Save the recovery phrase shown after setup.
+• Future launches require the password you created.
+
+Important:
+• Blockchain and AuthChain features are local educational simulations only.
+• No real crypto, no real wallets, no external services.

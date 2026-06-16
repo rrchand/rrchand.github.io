@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaDesk Ultimate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="boot" class="boot"><div class="boot-card"><div class="orb"></div><h1>NovaDesk Ultimate</h1><p>Offline web desktop environment</p></div></div>
+  <section id="lock-screen" class="lock-screen hidden"></section>
+  <main id="desktop" class="desktop">
+    <div class="wallpaper"></div>
+    <section id="widgets" class="widgets"></section>
+    <section id="desktop-icons" class="desktop-icons"></section>
+    <section id="window-layer" class="window-layer"></section>
+  </main>
+  <aside id="start-menu" class="start-menu hidden">
+    <header><div><b>NovaDesk</b><small>Apps, games, tools, blockchain lab</small></div><button id="start-close" class="btn icon">×</button></header>
+    <input id="start-search" class="input" type="search" placeholder="Search everything" autocomplete="off" />
+    <div id="start-apps" class="start-apps"></div>
+  </aside>
+  <aside id="quick-panel" class="side-panel hidden"></aside>
+  <aside id="notification-panel" class="side-panel notifications hidden"></aside>
+  <section id="command-palette" class="command-palette hidden"><input id="command-input" class="input" placeholder="Type a command, app, file, or setting" /><div id="command-results"></div></section>
+  <nav class="taskbar">
+    <button id="start-button" class="task-btn start">◆</button>
+    <input id="taskbar-search" class="task-search" type="search" placeholder="Search apps, tools or URL" autocomplete="off" />
+    <div id="taskbar-apps" class="taskbar-apps"></div>
+    <button id="quick-button" class="task-btn">⚙</button>
+    <button id="notify-button" class="task-btn">🔔<span id="notify-badge" class="badge hidden">0</span></button>
+    <button id="lock-button" class="task-btn">🔒</button>
+    <span id="clock" class="clock"></span>
+  </nav>
+  <div id="context-menu" class="context-menu hidden"></div>
+  <div id="snap-preview" class="snap-preview hidden"></div>
+  <div id="toasts" class="toasts"></div>
+  <script src="storage.js"></script>
+  <script src="state.js"></script>
+  <script src="appRegistry.js"></script>
+  <script src="contextMenu.js"></script>
+  <script src="notifications.js"></script>
+  <script src="windowManager.js"></script>
+  <script src="app-system.js"></script>
+  <script src="app-productivity.js"></script>
+  <script src="app-games.js"></script>
+  <script src="app-blockchain.js"></script>
+  <script src="app-authchain.js"></script>
+  <script src="app-realism.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
