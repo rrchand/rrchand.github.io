@@ -1,0 +1,1 @@
+(function(){const apps={};function register(app){apps[app.id]=app}function get(id){return apps[id]}function all(){return Object.values(apps).sort((a,b)=>a.name.localeCompare(b.name))}window.NovaApps={register,get,all}})();
